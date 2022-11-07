@@ -1,0 +1,42 @@
+<p>
+  <head>
+    <title>Taller 4 Angular</title>
+  </head>
+  <body>
+    <div class = "row">
+      <div class="container-fluid">
+        <div class="col-6">
+          <table class="table" id="serie">
+            <thead>
+              <tr>
+                <th class="h4">#</th>
+                <th class="h4">Name</th>
+                <th class="h4">Channel</th>
+                <th class="h4">Seasons</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let c of series">
+                <td>
+                  <dd>{{c.id}}</dd>
+                </td>
+                <td>
+                  <dd>{{c.name}}</dd>
+                </td>
+                <td>
+                  <dd>{{c.channel}}</dd>
+                </td>
+                <td>
+                  <dd>{{c.seasons}}</dd>
+                </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <tr>
+          <td><b>Promedio temporadas: </b></td><td>{{prom}}</td>
+        </tr>
+      </div>
+    </div>
+  </body>
+</p>
